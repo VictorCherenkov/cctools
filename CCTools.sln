@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCTools.Cmd", "CCTools.Cmd\CCTools.Cmd.csproj", "{B0E15A2D-D374-4D74-96AA-6766DFA875E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{1568CF74-CAE1-4112-A4D7-0D4CC2FF105B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCTools.Dll", "CCTools.Dll\CCTools.Dll.csproj", "{CE1025AD-19FB-42B3-9C34-853A9FF88AE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0E15A2D-D374-4D74-96AA-6766DFA875E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0E15A2D-D374-4D74-96AA-6766DFA875E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0E15A2D-D374-4D74-96AA-6766DFA875E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0E15A2D-D374-4D74-96AA-6766DFA875E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1568CF74-CAE1-4112-A4D7-0D4CC2FF105B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1568CF74-CAE1-4112-A4D7-0D4CC2FF105B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1568CF74-CAE1-4112-A4D7-0D4CC2FF105B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1568CF74-CAE1-4112-A4D7-0D4CC2FF105B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE1025AD-19FB-42B3-9C34-853A9FF88AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1025AD-19FB-42B3-9C34-853A9FF88AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1025AD-19FB-42B3-9C34-853A9FF88AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE1025AD-19FB-42B3-9C34-853A9FF88AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
