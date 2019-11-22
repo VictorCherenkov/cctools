@@ -1,0 +1,1 @@
+@ipy %~dp0spec.py %*
