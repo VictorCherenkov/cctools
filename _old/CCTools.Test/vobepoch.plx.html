@@ -1,0 +1,618 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>VOB Epochs</title>
+<link rev="made" href="mailto:michael_kovler%40amat.com" />
+<base href="http://css/www1/cmweb/vobepoch.plx" />
+<script type="text/JAVASCRIPT">//<![CDATA[
+// This script is intended for use with a minimum of Netscape 4 or IE 4.
+if(document.layers) {
+	var ns4 = true;
+	}
+if(document.all) {
+	var ie4 = true;
+	}
+
+function showObject(obj) {
+	if (ns4) obj.visibility = "show";
+	else if (ie4) obj.visibility = "visible";
+	}
+function hideObject(obj) {
+	if (ns4) {
+		obj.visibility = "hide";
+		}
+	if (ie4) {
+		obj.visibility = "hidden";
+	}else{
+		obj.style.display='none';
+	}
+	}
+
+//]]></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body link="#363636" alink="#d5ae83" vlink="#363636" bgcolor="#efefef" text="#000000">
+<LINK REL="StyleSheet" HREF="/themes/CSS/style/style.css" TYPE="text/css"><h3 align="center"><u> VOB Synchronization </u></h3>
+<form method="post" action="http://css/www1/cmweb/vobepoch.plx?Action=Query;VOB=CGAFE" enctype="application/x-www-form-urlencoded">
+<table border="0" cellspacing="2"><tr align="LEFT" valign="TOP"><td><strong>VOB </strong></td> <td><select name="VOB" >
+<option value="AAA">AAA</option>
+<option value="AAA-MCS">AAA-MCS</option>
+<option value="AAA-MCS-DOCS">AAA-MCS-DOCS</option>
+<option value="AAAComm">AAAComm</option>
+<option value="AAAComm_rel">AAAComm_rel</option>
+<option value="AAATester">AAATester</option>
+<option value="AAATester_rel">AAATester_rel</option>
+<option value="ACC">ACC</option>
+<option value="ACCGui">ACCGui</option>
+<option value="ACCGui_rel">ACCGui_rel</option>
+<option value="ACC_rel">ACC_rel</option>
+<option value="ACMS">ACMS</option>
+<option value="ACMS_rel">ACMS_rel</option>
+<option value="ACSM">ACSM</option>
+<option value="ACSM_rel">ACSM_rel</option>
+<option value="AIM">AIM</option>
+<option value="AIM_rel">AIM_rel</option>
+<option value="AMATDNetDevices">AMATDNetDevices</option>
+<option value="AMBLines">AMBLines</option>
+<option value="AMBLines_old">AMBLines_old</option>
+<option value="AMBLines_rel">AMBLines_rel</option>
+<option value="AMGI_PASSDOWN">AMGI_PASSDOWN</option>
+<option value="AMS">AMS</option>
+<option value="AMS1">AMS1</option>
+<option value="ASX">ASX</option>
+<option value="ASX_rel">ASX_rel</option>
+<option value="ASim">ASim</option>
+<option value="ASim_rel">ASim_rel</option>
+<option value="AXIOM">AXIOM</option>
+<option value="AXIOM_rel">AXIOM_rel</option>
+<option value="AbstractLibs">AbstractLibs</option>
+<option value="AbstractLibs_rel">AbstractLibs_rel</option>
+<option value="AceWebCom">AceWebCom</option>
+<option value="AmIO">AmIO</option>
+<option value="AmatSockets">AmatSockets</option>
+<option value="Antares">Antares</option>
+<option value="Antares_rel">Antares_rel</option>
+<option value="AutoCal">AutoCal</option>
+<option value="AutoCal_rel">AutoCal_rel</option>
+<option value="Avanti">Avanti</option>
+<option value="Avanti_rel">Avanti_rel</option>
+<option value="BDS-Control">BDS-Control</option>
+<option value="BIT">BIT</option>
+<option value="BOSS">BOSS</option>
+<option value="BatchProcessChamber">BatchProcessChamber</option>
+<option value="BatchProcessChamber_rel">BatchProcessChamber_rel</option>
+<option value="BatchTool">BatchTool</option>
+<option value="BatchTool_rel">BatchTool_rel</option>
+<option value="Beethoven">Beethoven</option>
+<option value="Beethoven_rel">Beethoven_rel</option>
+<option value="BlueBox">BlueBox</option>
+<option value="BlueBox_rel">BlueBox_rel</option>
+<option value="BossWin">BossWin</option>
+<option value="BufferChamber">BufferChamber</option>
+<option value="BufferChamber_VS2005_NT51_rel">BufferChamber_VS2005_NT51_rel</option>
+<option value="BufferChamber_rel">BufferChamber_rel</option>
+<option value="C200">C200</option>
+<option value="C300">C300</option>
+<option value="C300CGA">C300CGA</option>
+<option value="C300CGA_rel">C300CGA_rel</option>
+<option value="C300_shared">C300_shared</option>
+<option value="CGA">CGA</option>
+<option value="CGAFA_rel">CGAFA_rel</option>
+<option selected="selected" value="CGAFE">CGAFE</option>
+<option value="CGAFEAIM">CGAFEAIM</option>
+<option value="CGAFEAIM_rel">CGAFEAIM_rel</option>
+<option value="CGAFEBaseline">CGAFEBaseline</option>
+<option value="CGAFEBaseline_rel">CGAFEBaseline_rel</option>
+<option value="CGAFE_rel">CGAFE_rel</option>
+<option value="CGAQuantumX">CGAQuantumX</option>
+<option value="CGART">CGART</option>
+<option value="CGART_VS2005_CE60_rel">CGART_VS2005_CE60_rel</option>
+<option value="CGART_VS2005_NT51_rel">CGART_VS2005_NT51_rel</option>
+<option value="CGART_rel">CGART_rel</option>
+<option value="CGASeq_rel">CGASeq_rel</option>
+<option value="CGAShared">CGAShared</option>
+<option value="CGA_2005_rel">CGA_2005_rel</option>
+<option value="CGA_NetGui">CGA_NetGui</option>
+<option value="CGA_VS2005_CE60_rel">CGA_VS2005_CE60_rel</option>
+<option value="CGA_VS2005_NT51_rel">CGA_VS2005_NT51_rel</option>
+<option value="CGA_rel">CGA_rel</option>
+<option value="CGMA">CGMA</option>
+<option value="CGMA_rel">CGMA_rel</option>
+<option value="CIUtils">CIUtils</option>
+<option value="CMA">CMA</option>
+<option value="CMA_rel">CMA_rel</option>
+<option value="CMDev">CMDev</option>
+<option value="CMFProducer">CMFProducer</option>
+<option value="CMFProducer_rel">CMFProducer_rel</option>
+<option value="CMP">CMP</option>
+<option value="CMPCleaner">CMPCleaner</option>
+<option value="CMPCleaner_rel">CMPCleaner_rel</option>
+<option value="CMPDesica300">CMPDesica300</option>
+<option value="CMPDesica300_rel">CMPDesica300_rel</option>
+<option value="CMP_rel">CMP_rel</option>
+<option value="CPICVD">CPICVD</option>
+<option value="CPICVD_VS2005_NT51_rel">CPICVD_VS2005_NT51_rel</option>
+<option value="CPICVD_rel">CPICVD_rel</option>
+<option value="CPIRDM">CPIRDM</option>
+<option value="CPIRDM_VS2005_NT51_rel">CPIRDM_VS2005_NT51_rel</option>
+<option value="CTRL">CTRL</option>
+<option value="CTRL2">CTRL2</option>
+<option value="CTRL3">CTRL3</option>
+<option value="CafeProj_fic">CafeProj_fic</option>
+<option value="CleanerOSeries">CleanerOSeries</option>
+<option value="Cleaner_Desica">Cleaner_Desica</option>
+<option value="Cleaner_Desica_new">Cleaner_Desica_new</option>
+<option value="Cleaner_Desica_rel">Cleaner_Desica_rel</option>
+<option value="Cleaner_Intel60">Cleaner_Intel60</option>
+<option value="Cleaner_IntelM3">Cleaner_IntelM3</option>
+<option value="Cleaner_rel">Cleaner_rel</option>
+<option value="Clio">Clio</option>
+<option value="Clio_rel">Clio_rel</option>
+<option value="CodeSign">CodeSign</option>
+<option value="Condor">Condor</option>
+<option value="Condor_VS2005_CE60_rel">Condor_VS2005_CE60_rel</option>
+<option value="Condor_VS2005_NT51_rel">Condor_VS2005_NT51_rel</option>
+<option value="Condor_rel">Condor_rel</option>
+<option value="ConstMon">ConstMon</option>
+<option value="ConstMon_rel">ConstMon_rel</option>
+<option value="DPS">DPS</option>
+<option value="DPS_rel">DPS_rel</option>
+<option value="DSA">DSA</option>
+<option value="DSA_rel">DSA_rel</option>
+<option value="DTAU">DTAU</option>
+<option value="DTAU_rel">DTAU_rel</option>
+<option value="DataRouterServer">DataRouterServer</option>
+<option value="DataRouterServer_rel">DataRouterServer_rel</option>
+<option value="DiagGUI">DiagGUI</option>
+<option value="DiagGUI_rel">DiagGUI_rel</option>
+<option value="Dnet">Dnet</option>
+<option value="Dream">Dream</option>
+<option value="Dream_rel">Dream_rel</option>
+<option value="ELK3">ELK3</option>
+<option value="ELK3_rel">ELK3_rel</option>
+<option value="EZsecs">EZsecs</option>
+<option value="EZsecs_VS2005_NT51_rel">EZsecs_VS2005_NT51_rel</option>
+<option value="EZsecs_rel">EZsecs_rel</option>
+<option value="Elogview">Elogview</option>
+<option value="EmbeddedOSImages">EmbeddedOSImages</option>
+<option value="EmbeddedOSImages_rel">EmbeddedOSImages_rel</option>
+<option value="Emersion">Emersion</option>
+<option value="Emersion1">Emersion1</option>
+<option value="Enabler">Enabler</option>
+<option value="Enabler_rel">Enabler_rel</option>
+<option value="Endura200C">Endura200C</option>
+<option value="Endura200C_pvob">Endura200C_pvob</option>
+<option value="Endura200C_rel">Endura200C_rel</option>
+<option value="Endura300VME">Endura300VME</option>
+<option value="Endura300VME_old">Endura300VME_old</option>
+<option value="Endura300VME_pvob">Endura300VME_pvob</option>
+<option value="Endura300VME_rel">Endura300VME_rel</option>
+<option value="EnduraCGA">EnduraCGA</option>
+<option value="EnduraCGA_rel">EnduraCGA_rel</option>
+<option value="EnduraE">EnduraE</option>
+<option value="Epsilon">Epsilon</option>
+<option value="Ericka">Ericka</option>
+<option value="Etch300">Etch300</option>
+<option value="Etch300_rel">Etch300_rel</option>
+<option value="EtchSim">EtchSim</option>
+<option value="EtchSim_rel">EtchSim_rel</option>
+<option value="EventManagement">EventManagement</option>
+<option value="Eview">Eview</option>
+<option value="FA_Docs">FA_Docs</option>
+<option value="FEPVME300">FEPVME300</option>
+<option value="FI-AMS">FI-AMS</option>
+<option value="FIAutoCalibrate">FIAutoCalibrate</option>
+<option value="FICSim">FICSim</option>
+<option value="FICSimulators">FICSimulators</option>
+<option value="FIChksum">FIChksum</option>
+<option value="FIErrorCodeInterpreter">FIErrorCodeInterpreter</option>
+<option value="FIFingerprinter">FIFingerprinter</option>
+<option value="FIRobotPortPMAC">FIRobotPortPMAC</option>
+<option value="FIRobotPortRS232">FIRobotPortRS232</option>
+<option value="FIRobotPortSim">FIRobotPortSim</option>
+<option value="FISeq">FISeq</option>
+<option value="FISeqLink">FISeqLink</option>
+<option value="FT">FT</option>
+<option value="FT_rel">FT_rel</option>
+<option value="FeatureProtection">FeatureProtection</option>
+<option value="FeatureProtectionVME">FeatureProtectionVME</option>
+<option value="FeatureProtection_VS2005_CE60_rel">FeatureProtection_VS2005_CE60_rel</option>
+<option value="FeatureProtection_VS2005_NT51_rel">FeatureProtection_VS2005_NT51_rel</option>
+<option value="FeatureProtection_rel">FeatureProtection_rel</option>
+<option value="Fic_docs">Fic_docs</option>
+<option value="Fic_mfc">Fic_mfc</option>
+<option value="FrontEnd">FrontEnd</option>
+<option value="GEMSV">GEMSV</option>
+<option value="GEMSV_rel">GEMSV_rel</option>
+<option value="GNU">GNU</option>
+<option value="GPV">GPV</option>
+<option value="GPV_rel">GPV_rel</option>
+<option value="HRTSCE">HRTSCE</option>
+<option value="HWDesign">HWDesign</option>
+<option value="HWDesign_rel">HWDesign_rel</option>
+<option value="ISRM300">ISRM300</option>
+<option value="ISRM300_rel">ISRM300_rel</option>
+<option value="ISRM_SycX">ISRM_SycX</option>
+<option value="ISRM_SycX_2">ISRM_SycX_2</option>
+<option value="IStruct">IStruct</option>
+<option value="Infra">Infra</option>
+<option value="Infra_VS2005_NT51_rel">Infra_VS2005_NT51_rel</option>
+<option value="Infra_rel">Infra_rel</option>
+<option value="Install">Install</option>
+<option value="Jan">Jan</option>
+<option value="Jan_VS2005_CE60_rel">Jan_VS2005_CE60_rel</option>
+<option value="Jan_VS2005_NT51_rel">Jan_VS2005_NT51_rel</option>
+<option value="Jan_rel">Jan_rel</option>
+<option value="LK">LK</option>
+<option value="LK_Trunk">LK_Trunk</option>
+<option value="LK_rel">LK_rel</option>
+<option value="LNRSP">LNRSP</option>
+<option value="LNRSPChambers">LNRSPChambers</option>
+<option value="LNRSPChambers_VS2005_NT51_rel">LNRSPChambers_VS2005_NT51_rel</option>
+<option value="LNRSPChambers_rel">LNRSPChambers_rel</option>
+<option value="LNRSP_rel">LNRSP_rel</option>
+<option value="LPSim">LPSim</option>
+<option value="LamiaEX_rel">LamiaEX_rel</option>
+<option value="LaserScribe">LaserScribe</option>
+<option value="LaserScribe_rel">LaserScribe_rel</option>
+<option value="Legacy">Legacy</option>
+<option value="Legacy_rel">Legacy_rel</option>
+<option value="LgSim">LgSim</option>
+<option value="LicenseGen">LicenseGen</option>
+<option value="LithoX">LithoX</option>
+<option value="LithoX_rel">LithoX_rel</option>
+<option value="LoadLock">LoadLock</option>
+<option value="LoadLock_rel">LoadLock_rel</option>
+<option value="MFC_TEST_SEC">MFC_TEST_SEC</option>
+<option value="MFIO">MFIO</option>
+<option value="MFIOGui">MFIOGui</option>
+<option value="MFIOGui_rel">MFIOGui_rel</option>
+<option value="MFIO_rel">MFIO_rel</option>
+<option value="MR_Shared">MR_Shared</option>
+<option value="MR_Shared_rel">MR_Shared_rel</option>
+<option value="MSI">MSI</option>
+<option value="MSI_rel">MSI_rel</option>
+<option value="MTC">MTC</option>
+<option value="MTC-DOC">MTC-DOC</option>
+<option value="Mesa">Mesa</option>
+<option value="Mesa_rel">Mesa_rel</option>
+<option value="MetalALD">MetalALD</option>
+<option value="MetalALD_rel">MetalALD_rel</option>
+<option value="Mf">Mf</option>
+<option value="MfGui">MfGui</option>
+<option value="MfGui_rel">MfGui_rel</option>
+<option value="MfTM">MfTM</option>
+<option value="MfTMVantageV">MfTMVantageV</option>
+<option value="MfTMVantageV_rel">MfTMVantageV_rel</option>
+<option value="MfTM_rel">MfTM_rel</option>
+<option value="MfUtil">MfUtil</option>
+<option value="MfUtil_rel">MfUtil_rel</option>
+<option value="MfVantageV">MfVantageV</option>
+<option value="MfVantageVGUI">MfVantageVGUI</option>
+<option value="MfVantageVGUI_rel">MfVantageVGUI_rel</option>
+<option value="MfVantageV_rel">MfVantageV_rel</option>
+<option value="Mf_rel">Mf_rel</option>
+<option value="Mirra">Mirra</option>
+<option value="Mirra_rel">Mirra_rel</option>
+<option value="Mocvd">Mocvd</option>
+<option value="Mocvd_rel">Mocvd_rel</option>
+<option value="Moira">Moira</option>
+<option value="Moira_rel">Moira_rel</option>
+<option value="Motion">Motion</option>
+<option value="MotionAssistant">MotionAssistant</option>
+<option value="MotionAssistant_rel">MotionAssistant_rel</option>
+<option value="MotionDataManager">MotionDataManager</option>
+<option value="MotionDataManager_rel">MotionDataManager_rel</option>
+<option value="MotionTest">MotionTest</option>
+<option value="NT_FE">NT_FE</option>
+<option value="NT_FE_rel">NT_FE_rel</option>
+<option value="Neon">Neon</option>
+<option value="Neon_rel">Neon_rel</option>
+<option value="NextGenMFC">NextGenMFC</option>
+<option value="NextGenMFC_rel">NextGenMFC_rel</option>
+<option value="OPCBCS">OPCBCS</option>
+<option value="OPCBCS_rel">OPCBCS_rel</option>
+<option value="OPCSecs">OPCSecs</option>
+<option value="OPCSecs_rel">OPCSecs_rel</option>
+<option value="OSA_VS2005_CE60_rel">OSA_VS2005_CE60_rel</option>
+<option value="OSA_VS2005_NT51_rel">OSA_VS2005_NT51_rel</option>
+<option value="OSA_rel">OSA_rel</option>
+<option value="Oak">Oak</option>
+<option value="Oak_rel">Oak_rel</option>
+<option value="Oasis">Oasis</option>
+<option value="Oasis_rel">Oasis_rel</option>
+<option value="Orienter">Orienter</option>
+<option value="Orienter_rel">Orienter_rel</option>
+<option value="OwnerChangeDetectionSrv">OwnerChangeDetectionSrv</option>
+<option value="OwnerChangeDetectionSrv_rel">OwnerChangeDetectionSrv_rel</option>
+<option value="P5000CVD">P5000CVD</option>
+<option value="P5000CVD_rel">P5000CVD_rel</option>
+<option value="P5000ETCH">P5000ETCH</option>
+<option value="P5000ETCH_rel">P5000ETCH_rel</option>
+<option value="P5000XTP">P5000XTP</option>
+<option value="P5000XTP_rel">P5000XTP_rel</option>
+<option value="PHP">PHP</option>
+<option value="PIERE_TEST">PIERE_TEST</option>
+<option value="PLUGINS">PLUGINS</option>
+<option value="PLUGINS_rel">PLUGINS_rel</option>
+<option value="Paris">Paris</option>
+<option value="Paris_rel">Paris_rel</option>
+<option value="Pine">Pine</option>
+<option value="Pine_rel">Pine_rel</option>
+<option value="Plasma">Plasma</option>
+<option value="Producer">Producer</option>
+<option value="ProducerM">ProducerM</option>
+<option value="ProducerM_NetGui">ProducerM_NetGui</option>
+<option value="ProducerM_rel">ProducerM_rel</option>
+<option value="Productivity_Suite">Productivity_Suite</option>
+<option value="Productivity_Suite_rel">Productivity_Suite_rel</option>
+<option value="QTPScripts">QTPScripts</option>
+<option value="QTP_QC">QTP_QC</option>
+<option value="Quark">Quark</option>
+<option value="RCS">RCS</option>
+<option value="RCS_rel">RCS_rel</option>
+<option value="RDM">RDM</option>
+<option value="RDM_Etch">RDM_Etch</option>
+<option value="RDM_Etch_VS2005_CE60_rel">RDM_Etch_VS2005_CE60_rel</option>
+<option value="RDM_Etch_VS2005_NT51_rel">RDM_Etch_VS2005_NT51_rel</option>
+<option value="RDM_Etch_rel">RDM_Etch_rel</option>
+<option value="RDM_NetGui">RDM_NetGui</option>
+<option value="RDM_VS2005_CE60_rel">RDM_VS2005_CE60_rel</option>
+<option value="RDM_VS2005_NT51_rel">RDM_VS2005_NT51_rel</option>
+<option value="RDM_rel">RDM_rel</option>
+<option value="RF3">RF3</option>
+<option value="RF3_rel">RF3_rel</option>
+<option value="RTC_view">RTC_view</option>
+<option value="RTC_view_rel">RTC_view_rel</option>
+<option value="Raider">Raider</option>
+<option value="Raider_rel">Raider_rel</option>
+<option value="RecEdit">RecEdit</option>
+<option value="Redwood">Redwood</option>
+<option value="Redwood_rel">Redwood_rel</option>
+<option value="RefleXion">RefleXion</option>
+<option value="RefleXion_rel">RefleXion_rel</option>
+<option value="Reflexion_Desica">Reflexion_Desica</option>
+<option value="Regal">Regal</option>
+<option value="Regal_rel">Regal_rel</option>
+<option value="Rialto">Rialto</option>
+<option value="Rialto_rel">Rialto_rel</option>
+<option value="SBURDM">SBURDM</option>
+<option value="SBURDM_rel">SBURDM_rel</option>
+<option value="SWDOC">SWDOC</option>
+<option value="ShareMaker">ShareMaker</option>
+<option value="Silver">Silver</option>
+<option value="Silver_rel">Silver_rel</option>
+<option value="Sim300">Sim300</option>
+<option value="Smart">Smart</option>
+<option value="Smart_rel">Smart_rel</option>
+<option value="SoftLine">SoftLine</option>
+<option value="Sokudo_QTP">Sokudo_QTP</option>
+<option value="StockerLF">StockerLF</option>
+<option value="StockerLF_rel">StockerLF_rel</option>
+<option value="SunFab">SunFab</option>
+<option value="SunFab_RDM">SunFab_RDM</option>
+<option value="Swift">Swift</option>
+<option value="SycWL_rel">SycWL_rel</option>
+<option value="Sycamore">Sycamore</option>
+<option value="Sycamore_rel">Sycamore_rel</option>
+<option value="SycmWL">SycmWL</option>
+<option value="TAZ">TAZ</option>
+<option value="TAZ_rel">TAZ_rel</option>
+<option value="TSC">TSC</option>
+<option value="TSC_rel">TSC_rel</option>
+<option value="Terminator">Terminator</option>
+<option value="TestEngine">TestEngine</option>
+<option value="TestFixture">TestFixture</option>
+<option value="TestFixture_rel">TestFixture_rel</option>
+<option value="TestGroup">TestGroup</option>
+<option value="ToolStation">ToolStation</option>
+<option value="ToolStationLF">ToolStationLF</option>
+<option value="ToolStationLF_rel">ToolStationLF_rel</option>
+<option value="ToolStation_rel">ToolStation_rel</option>
+<option value="TraceLog">TraceLog</option>
+<option value="TransferGUI">TransferGUI</option>
+<option value="TransferModule">TransferModule</option>
+<option value="VME_Motion">VME_Motion</option>
+<option value="VendorApps">VendorApps</option>
+<option value="Versailles">Versailles</option>
+<option value="Versailles_rel">Versailles_rel</option>
+<option value="WISRPre">WISRPre</option>
+<option value="WISRPre_rel">WISRPre_rel</option>
+<option value="WISRTest">WISRTest</option>
+<option value="WISRTest_rel">WISRTest_rel</option>
+<option value="WaferHistory">WaferHistory</option>
+<option value="WhiteLight">WhiteLight</option>
+<option value="WhiteLight_rel">WhiteLight_rel</option>
+<option value="Win32_lib">Win32_lib</option>
+<option value="Win32_lib_rel">Win32_lib_rel</option>
+<option value="WinWatcher">WinWatcher</option>
+<option value="Wisr">Wisr</option>
+<option value="Wisr_rel">Wisr_rel</option>
+<option value="XferChamber">XferChamber</option>
+<option value="XferChamber_VS2005_CE60_rel">XferChamber_VS2005_CE60_rel</option>
+<option value="XferChamber_rel">XferChamber_rel</option>
+<option value="admin_synexis">admin_synexis</option>
+<option value="amcfg">amcfg</option>
+<option value="analog">analog</option>
+<option value="apache">apache</option>
+<option value="at_rel">at_rel</option>
+<option value="batch">batch</option>
+<option value="bsp">bsp</option>
+<option value="c2_rel">c2_rel</option>
+<option value="c3_rel">c3_rel</option>
+<option value="cPCICGAUtil">cPCICGAUtil</option>
+<option value="chRad">chRad</option>
+<option value="chimera">chimera</option>
+<option value="chimera_rel">chimera_rel</option>
+<option value="cmp_desica">cmp_desica</option>
+<option value="cmp_desica_rel">cmp_desica_rel</option>
+<option value="cmp_rtpc">cmp_rtpc</option>
+<option value="cmp_rtpc_rel">cmp_rtpc_rel</option>
+<option value="css_web">css_web</option>
+<option value="documents">documents</option>
+<option value="e3_rel">e3_rel</option>
+<option value="ecp">ecp</option>
+<option value="ecp_rel">ecp_rel</option>
+<option value="eda">eda</option>
+<option value="eda_rel">eda_rel</option>
+<option value="edac">edac</option>
+<option value="edac_rel">edac_rel</option>
+<option value="ee_rel">ee_rel</option>
+<option value="elk_rel">elk_rel</option>
+<option value="epi300">epi300</option>
+<option value="etch_vxworks">etch_vxworks</option>
+<option value="fa_sec">fa_sec</option>
+<option value="fa_sec_rel">fa_sec_rel</option>
+<option value="falk">falk</option>
+<option value="falk_rel">falk_rel</option>
+<option value="fi_macros">fi_macros</option>
+<option value="fi_utilities">fi_utilities</option>
+<option value="fic_release">fic_release</option>
+<option value="fic_testing">fic_testing</option>
+<option value="ficcomm">ficcomm</option>
+<option value="fp_license">fp_license</option>
+<option value="fp_license_pvob">fp_license_pvob</option>
+<option value="glbl_data">glbl_data</option>
+<option value="gp">gp</option>
+<option value="gp_rel">gp_rel</option>
+<option value="gpc">gpc</option>
+<option value="gss_web">gss_web</option>
+<option value="iBox">iBox</option>
+<option value="iBox_config">iBox_config</option>
+<option value="iBox_config_rel">iBox_config_rel</option>
+<option value="iBox_rel">iBox_rel</option>
+<option value="iEcpVME">iEcpVME</option>
+<option value="iMap">iMap</option>
+<option value="iMap_pvob">iMap_pvob</option>
+<option value="iMap_rel">iMap_rel</option>
+<option value="iMet">iMet</option>
+<option value="iMet_rel">iMet_rel</option>
+<option value="iToolStn">iToolStn</option>
+<option value="iToolStn_rel">iToolStn_rel</option>
+<option value="ichart">ichart</option>
+<option value="ichart_rel">ichart_rel</option>
+<option value="implant">implant</option>
+<option value="ism_quartz">ism_quartz</option>
+<option value="ism_quartz_rel">ism_quartz_rel</option>
+<option value="ism_rep4">ism_rep4</option>
+<option value="ism_rep4_rel">ism_rep4_rel</option>
+<option value="ism_simulator">ism_simulator</option>
+<option value="ism_toolbox">ism_toolbox</option>
+<option value="legos">legos</option>
+<option value="m3_rel">m3_rel</option>
+<option value="mdp300">mdp300</option>
+<option value="mei">mei</option>
+<option value="modules">modules</option>
+<option value="modules_archive">modules_archive</option>
+<option value="modules_old">modules_old</option>
+<option value="modules_rel">modules_rel</option>
+<option value="motion_rel">motion_rel</option>
+<option value="mult_motion">mult_motion</option>
+<option value="n_Endura200C">n_Endura200C</option>
+<option value="n_Endura300VME">n_Endura300VME</option>
+<option value="n_modules">n_modules</option>
+<option value="old_BOSS">old_BOSS</option>
+<option value="old_batch">old_batch</option>
+<option value="oomod">oomod</option>
+<option value="p3i">p3i</option>
+<option value="p3i_rel">p3i_rel</option>
+<option value="pr_rel">pr_rel</option>
+<option value="producer_vob">producer_vob</option>
+<option value="quantumx">quantumx</option>
+<option value="quantumx_rel">quantumx_rel</option>
+<option value="re_release">re_release</option>
+<option value="rtc_sc_tcx_controllers">rtc_sc_tcx_controllers</option>
+<option value="secs">secs</option>
+<option value="sequencer">sequencer</option>
+<option value="sequencer_rel">sequencer_rel</option>
+<option value="signer_rel">signer_rel</option>
+<option value="sim2000">sim2000</option>
+<option value="simu">simu</option>
+<option value="simu_rel">simu_rel</option>
+<option value="sprt">sprt</option>
+<option value="sycimap">sycimap</option>
+<option value="sycimap_rel">sycimap_rel</option>
+<option value="syclsrm">syclsrm</option>
+<option value="syclsrm_rel">syclsrm_rel</option>
+<option value="sycrtpc">sycrtpc</option>
+<option value="sycrtpc_rel">sycrtpc_rel</option>
+<option value="syscon4">syscon4</option>
+<option value="syscon4_rel">syscon4_rel</option>
+<option value="tcg_ART">tcg_ART</option>
+<option value="tcg_rtc">tcg_rtc</option>
+<option value="tcg_rtc_rel">tcg_rtc_rel</option>
+<option value="tcg_shared300">tcg_shared300</option>
+<option value="tcg_simu">tcg_simu</option>
+<option value="tcg_utils300">tcg_utils300</option>
+<option value="tcg_v300">tcg_v300</option>
+<option value="tcg_v300_rel">tcg_v300_rel</option>
+<option value="tcg_vxworks">tcg_vxworks</option>
+<option value="testVME">testVME</option>
+<option value="testdir">testdir</option>
+<option value="tlbx">tlbx</option>
+<option value="tlbx_AMB">tlbx_AMB</option>
+<option value="tlbx_AMB_rel">tlbx_AMB_rel</option>
+<option value="tlbx_etch">tlbx_etch</option>
+<option value="tlbx_fa">tlbx_fa</option>
+<option value="tlbx_fa_rel">tlbx_fa_rel</option>
+<option value="tlbx_src">tlbx_src</option>
+<option value="tmp_ELK3">tmp_ELK3</option>
+<option value="tmp_test">tmp_test</option>
+<option value="toolbox_fa">toolbox_fa</option>
+<option value="tsg_ifdata">tsg_ifdata</option>
+<option value="tsg_simulators">tsg_simulators</option>
+<option value="tsg_vme200">tsg_vme200</option>
+<option value="tsg_vme200_rel">tsg_vme200_rel</option>
+<option value="tst_tools">tst_tools</option>
+<option value="usr_utils">usr_utils</option>
+<option value="usr_utils_rel">usr_utils_rel</option>
+<option value="vg3">vg3</option>
+<option value="vg3_rel">vg3_rel</option>
+<option value="zBOSS">zBOSS</option>
+<option value="zBOSS_rel">zBOSS_rel</option>
+</select></td> <td>Please Notify M. Kovler if your VOB doesn't appear here.</td></tr></table>
+<P><input type="reset"  name=".reset" />
+<input type="submit" name="Action" value="Query" />
+</form>
+<HR>
+<DIV ID="splashScreen" STYLE="position:absolute;z-index:5;top:30%;left:35%;">
+<TABLE BGCOLOR="#000000" BORDER=1 BORDERCOLOR="#000000" CELLPADDING=0 CELLSPACING=0 HEIGHT=200 WIDTH=300>
+	<TR>
+		<TD WIDTH="100%" HEIGHT="100%" BGCOLOR="#CCCCCC" ALIGN="CENTER" VALIGN="MIDDLE"><BR><BR> &nbsp; &nbsp; 
+			<FONT FACE="Helvetica,Verdana,Arial" SIZE=3 COLOR="#000066"><B>Query is being processed.  Please wait...</B></FONT> 
+			&nbsp; &nbsp; <BR> 
+			<IMG SRC="wait.gif" BORDER=1 WIDTH=75 HEIGHT=15><BR><BR> 
+		</TD>
+	</TR>
+</TABLE>
+</DIV>
+
+<table border="1" cellspacing="0" cellpadding="0" width="100%" bgcolor="white" rules="all" align="center" style="color: blue">
+<caption align="top"><i>Real EPOCH numbers for <B>CGAFE</B> VOB replicas<i></caption>
+<tbody>
+<tr bgcolor="#CCFFFF" align="CENTER"><th align="center" bgcolor="#CCFFFF"></th><th>sync</th><th>spb</th><th>bu</th><th>cvd</th><th>smtl</th><th>ru</th><th>gdc</th><th>bacc</th></tr>
+<tr><th align="left" bgcolor="#CCFFFF">Sync Server, SCLA, CA, USA (sync)</th><td bgcolor="#00FF00"><B><font color=green>15</font></B></td><td bgcolor="#FFFFCC">117587</td><td>3</td><td>2351540</td><td>571</td><td>82</td><td>3</td><td>1791</td></tr>
+<tr><th align="left" bgcolor="#CCFFFF">St Petersburg, RU (spb)</th><td>15</td><td bgcolor="#00FF00"><B><font color=green>117589</font></B></td><td>3</td><td>2351540</td><td>571</td><td>82</td><td>3</td><td>1791</td></tr>
+<tr><th align="left" bgcolor="#CCFFFF">BCP Server, Austin, TX, USA (bu)</th><td>15</td><td bgcolor="#FFFFCC">117587</td><td bgcolor="#00FF00"><B><font color=green>3</font></B></td><td>2351540</td><td>571</td><td>82</td><td>3</td><td>1791</td></tr>
+<tr><th align="left" bgcolor="#CCFFFF">Bldg 81, SCLA, CA, USA (cvd)</th><td>15</td><td bgcolor="#FFFFCC">117587</td><td>3</td><td bgcolor="#00FF00"><B><font color=green>2351540</font></B></td><td>571</td><td>82</td><td>3</td><td>1791</td></tr>
+<tr><th align="left" bgcolor="#CCFFFF">Semitool, Kalispell, MT, USA (smtl)</th><td>15</td><td bgcolor="#FFFFCC">117587</td><td>3</td><td>2351540</td><td bgcolor="#00FF00"><B><font color=green>571</font></B></td><td>82</td><td>3</td><td>1791</td></tr>
+<tr><th align="left" bgcolor="#CCFFFF">Moscow, RU (ru)</th><td>15</td><td bgcolor="#FFFFCC">116713</td><td>3</td><td bgcolor="#FFFFCC">2288868</td><td bgcolor="#FFFFCC">446</td><td bgcolor="#00FF00"><B><font color=green>82</font></B></td><td>3</td><td>1791</td></tr>
+<tr><th align="left" bgcolor="#CCFFFF">Bangalore, IN (gdc)</th><td>15</td><td bgcolor="#FFFFCC">117587</td><td>3</td><td>2351540</td><td>571</td><td>82</td><td bgcolor="#00FF00"><B><font color=green>3</font></B></td><td>1791</td></tr>
+<tr><th align="left" bgcolor="#CCFFFF">Baccini, Treviso, Italy (bacc)</th><td>15</td><td bgcolor="#FFFFCC">117587</td><td>3</td><td>2351540</td><td>571</td><td>82</td><td>3</td><td bgcolor="#00FF00"><B><font color=green>1791</font></B></td></tr>
+</tbody>
+</table>
+<SCRIPT LANGUAGE="JavaScript">
+splash=document.getElementById('splashScreen');
+if(ns4) {
+	var splash = document.splashScreen;
+	}
+else if(ie4) {
+	var splash = document.all.splashScreen.style;
+	}
+hideObject(splash);
+</SCRIPT>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCTools", "CCTools\CCTools.csproj", "{A1734101-3FCD-4043-8E30-F27A3C98B3DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCTools.Test", "CCTools.Test\CCTools.Test.csproj", "{B8D62348-B8E2-4F53-BBE7-603D9DB07803}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1734101-3FCD-4043-8E30-F27A3C98B3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1734101-3FCD-4043-8E30-F27A3C98B3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1734101-3FCD-4043-8E30-F27A3C98B3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1734101-3FCD-4043-8E30-F27A3C98B3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D62348-B8E2-4F53-BBE7-603D9DB07803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D62348-B8E2-4F53-BBE7-603D9DB07803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D62348-B8E2-4F53-BBE7-603D9DB07803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D62348-B8E2-4F53-BBE7-603D9DB07803}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
