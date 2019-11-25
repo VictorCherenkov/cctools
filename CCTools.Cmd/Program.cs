@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -22,16 +21,30 @@ namespace CCTools.Cmd
             var folder = Environment.CurrentDirectory;
             var view = folder.GetCurrentView();
             var cmd = args.FirstOrDefault();
-            if (cmd != Commands.Cd)
+            if (cmd == Commands.ConfigSpec)
+            {
+                var productId = new ProductId(args[1]);
+                var targetVersion = new TargetVersion(args[2]);
+                var branch = "jsrXXXXXX_VC";
+                var cs = MainApi.GetSrCsWeb(productId, targetVersion, branch);
+                cs.ForEach(line => Console.WriteLine(line));
+            }
+            else if (cmd == Commands.LoadRelVobs)
+            {
+                var productId = new ProductId(args[1]);
+                var targetVersion = new TargetVersion(args[2]);
+                var branch = "jsrXXXXXX_VC";
+                var cs = MainApi.GetSrCsWeb(productId, targetVersion, branch);
+                cs.ForEach(line => Console.WriteLine(line));
+                MainApi.ApplyCs(cs, Directory.GetParent(folder).FullName);
+            }
+
+            else if (cmd != Commands.Cd)
                 Console.WriteLine(view?.DisplayText ?? $"{folder} is not ClearCase view path");
             var canOperateOnNonCcViews = args.Length > 3 && cmd.IsOneOf(Commands.NewSr, Commands.NewBuild);
             if (!canOperateOnNonCcViews && (!args.Any() || view?.ViewType == null || view.ViewType.Value != ViewType.Sr))
                 return;
-            if (cmd == Commands.ConfigSpec)
-            {
-                Console.WriteLine(view.ConfigSpec.Lines.ToLinesString());
-            }
-            else if (cmd == Commands.Help)
+            if (cmd == Commands.Help)
             {
                 var commands = typeof(Commands)
                     .GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.FlattenHierarchy)

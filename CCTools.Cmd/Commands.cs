@@ -4,6 +4,7 @@
     {
         public const string Test = "test";
         public const string ConfigSpec = "cs";
+        public const string LoadRelVobs = "rel";
         public const string Help = "help";
         public const string FullUpdate = "fu";
         public const string ShowChangelist = "cl";

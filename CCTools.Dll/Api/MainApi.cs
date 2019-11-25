@@ -25,8 +25,9 @@ namespace CCTools.Dll.Api
         public static void ApplyCs(string[] cs, string localViewPath)
         {
             var sw = Stopwatch.StartNew();
+            var cfgFile = $@"{localViewPath}\cs.cfg";
             Directory.SetCurrentDirectory(localViewPath);
-            File.WriteAllLines(Constants.TempCsStorageFileName, cs);
+            File.WriteAllLines(cfgFile, cs);
             var srcElapsed = TimeSpan.Zero;
             var relElapsed = TimeSpan.Zero;
             Parallel.Invoke(() =>
