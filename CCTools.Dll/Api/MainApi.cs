@@ -27,7 +27,6 @@ namespace CCTools.Dll.Api
             var sw = Stopwatch.StartNew();
             var cfgFile = $@"{localViewPath}\cs.cfg";
             Directory.SetCurrentDirectory(localViewPath);
-            File.WriteAllLines(cfgFile, cs);
             File.WriteAllLines(Constants.TempCsStorageFileName, cs);
             var srcElapsed = TimeSpan.Zero;
             var relElapsed = TimeSpan.Zero;
@@ -43,6 +42,7 @@ namespace CCTools.Dll.Api
                 ProcessRelVobsRules(cs, localViewPath);
                 relElapsed = sw.Elapsed;
                 Console.WriteLine($"Rel vob files updated. Elapsed: {relElapsed}.");
+                File.WriteAllLines(cfgFile, cs);
             });
             sw.Stop();
             Console.WriteLine($"Update done.\r\nSource: {srcElapsed}.\r\nRel: {relElapsed}.");
