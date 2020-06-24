@@ -28,6 +28,7 @@ namespace CCTools.Dll.Api
             var cfgFile = $@"{localViewPath}\cs.cfg";
             Directory.SetCurrentDirectory(localViewPath);
             File.WriteAllLines(cfgFile, cs);
+            File.WriteAllLines(Constants.TempCsStorageFileName, cs);
             var srcElapsed = TimeSpan.Zero;
             var relElapsed = TimeSpan.Zero;
             Parallel.Invoke(() =>
