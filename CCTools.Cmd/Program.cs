@@ -34,9 +34,18 @@ namespace CCTools.Cmd
                 var productId = new ProductId(args[1]);
                 var targetVersion = new TargetVersion(args[2]);
                 var branch = "jsrXXXXXX_VC";
+                var localViewPath = Directory.GetParent(folder).FullName;
+                if (!Directory.Exists(Path.Combine(localViewPath, "Products")))
+                {
+                    Console.WriteLine("Directory does not appear to be a view main VOB directory. Please type YES if you force to continue.");
+                    if (Console.ReadLine().ToUpper() != "YES")
+                    {
+                        return;
+                    }
+                }
                 var cs = MainApi.GetSrCsWeb(productId, targetVersion, branch);
                 cs.ForEach(line => Console.WriteLine(line));
-                MainApi.ApplyCs(cs, Directory.GetParent(folder).FullName);
+                MainApi.ApplyCs(cs, localViewPath);
             }
 
             else if (cmd != Commands.Cd)
