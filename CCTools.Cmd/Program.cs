@@ -35,7 +35,7 @@ namespace CCTools.Cmd
                 var targetVersion = new TargetVersion(args[2]);
                 var branch = "jsrXXXXXX_VC";
                 var localViewPath = Directory.GetParent(folder).FullName;
-                if (!Directory.Exists(Path.Combine(localViewPath, "Products")))
+                if (!Directory.Exists(Path.Combine(folder, "Products")))
                 {
                     Console.WriteLine("Directory does not appear to be a view main VOB directory. Please type YES if you force to continue.");
                     if (Console.ReadLine().ToUpper() != "YES")
